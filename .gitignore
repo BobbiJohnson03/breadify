@@ -1,0 +1,22 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# macOS system files
+.DS_Store
+
+# IDE configurations
+.vscode/
+
+# Build files
+dist/
+
+# Backend-specific
+/backend/node_modules/
+/backend/.env
+
+# Frontend-specific
+/frontend/node_modules/
+/frontend/.env
