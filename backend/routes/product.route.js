@@ -14,6 +14,7 @@ import {
   deleteProduct,
   getProducts,
   updateProduct,
+  getProductById, 
 } from "../controllers/product.controller.js";
 
 const router = express.Router();
@@ -21,6 +22,8 @@ const router = express.Router();
 // Pobierz wszystkie produkty
 router.get("/", getProducts);
 
+// Pobierz produkt po ID
+router.get("/:id", getProductById);
 
 // Utwórz nowy produkt
 router.post("/", createProduct);

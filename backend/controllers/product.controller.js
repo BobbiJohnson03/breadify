@@ -36,6 +36,29 @@ export const getProducts = async (req, res) => {
   }
 };
 
+
+// Pobierz produkt po ID
+export const getProductById = async (req, res) => {
+  const { id } = req.params;
+
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res
+      .status(404)
+      .json({ success: false, message: "Invalid Product Id" });
+  }
+
+  try {
+    const product = await Product.findById(id);
+    if (!product) {
+      return res.status(404).json({ success: false, message: "Product not found" });
+    }
+    res.status(200).json({ success: true, data: product });
+  } catch (error) {
+    console.error("Error in fetching product:", error.message);
+    res.status(500).json({ success: false, message: "Server Error" });
+  }
+};
+
 // Utwórz nowy produkt
 export const createProduct = async (req, res) => {
   const { name, price, image, category } = req.body;
