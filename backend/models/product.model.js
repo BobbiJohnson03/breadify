@@ -1,6 +1,5 @@
 // backend/models/product.model.js
 
-
 //  Models in the context of MongoDB are used to define the structure of our data
 import mongoose from "mongoose";
 
@@ -17,6 +16,7 @@ const productSchema = new mongoose.Schema(
     price: {
       type: Number,
       required: true,
+      min: 0,
     },
     image: {
       type: String,
