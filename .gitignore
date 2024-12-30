@@ -13,15 +13,23 @@ node_modules/
 # Build files
 dist/
 
-# Backend-specific
-/backend/node_modules/
-/backend/.env
-
-# Frontend-specific
-/frontend/node_modules/
-/frontend/.env
-/backend/UsersLuizaAppDataLocalnpm-cache/
-
-# Ignoruj pamięć podręczną npm
-.npm/
+# Ignorowanie pamięci podręcznej npm
 npm-cache/
+.npm/
+
+# Ignorowanie plików logów
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Ignorowanie plików i folderów specyficznych dla systemów
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
