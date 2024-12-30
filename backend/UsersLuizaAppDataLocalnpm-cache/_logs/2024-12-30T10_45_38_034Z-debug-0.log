@@ -7,7 +7,7 @@
 6 silly config load:file:C:\Users\Luiza\AppData\Roaming\npm\etc\npmrc
 7 verbose title npm run dev
 8 verbose argv "run" "dev"
-9 verbose logfile logs-max:10 dir:C:\Users\Luiza\Desktop\breadify\breadify\backend\UsersLuizaAppDataLocalnpm-cache\_logs\2024-12-27T11_13_15_939Z-
-10 verbose logfile C:\Users\Luiza\Desktop\breadify\breadify\backend\UsersLuizaAppDataLocalnpm-cache\_logs\2024-12-27T11_13_15_939Z-debug-0.log
+9 verbose logfile logs-max:10 dir:C:\Users\Luiza\Desktop\breadify\breadify\backend\UsersLuizaAppDataLocalnpm-cache\_logs\2024-12-30T10_45_38_034Z-
+10 verbose logfile C:\Users\Luiza\Desktop\breadify\breadify\backend\UsersLuizaAppDataLocalnpm-cache\_logs\2024-12-30T10_45_38_034Z-debug-0.log
 11 silly logfile start cleaning logs, removing 1 files
 12 silly logfile done cleaning log files
